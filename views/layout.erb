@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Doctor's Office</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+    	<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+     <div class="main">
+       <div class="navbar">
+          <header>
+              <h1> Doctor's Office</h1>
+          </header>
+          <nav>
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="/doctors">View Doctors</a></li>
+              <li><a href="/patients">View Patients</a></li>
+              <li><a href="/doctors/new">Add New Doctor</a></li>
+              <li><a href="/patients/new">Register...</a></li>
+            </ul>
+          </nav>
+       </div>
+       <div class='container'>
+         <%= yield %>
+       </div>
+    </div>
+    <footer>
+        <button class="btn"><a href="/clear_doctors">Delete DOCTORS</a></button>
+        <button class="btn"><a href="/clear_patients">Delete PATIENTS</a></button>
+    </footer>
+  </body>
+</html>

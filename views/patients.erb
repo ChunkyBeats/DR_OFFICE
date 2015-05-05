@@ -1,0 +1,14 @@
+<h1>Current Patients</h1>
+
+<% if @patients.any? %>
+  <h3>Patients:</h3>
+  <ul>
+      <% @patients.each do |patient| %>
+        <li><a href="/patients/<%= patient.id %>"> <%= patient.patient_name %> </a></li>
+      <% end %>
+  </ul>
+  <% else %>
+    <p>
+      No patients available. ITS NOT YOUR FRIGGEN BUSINESS ANYWAYS.
+    </p>
+  <% end %>

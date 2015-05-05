@@ -1,0 +1,14 @@
+<h1>Current Doctors</h1>
+
+<% if @doctors.any? %>
+  <h3>Doctors:</h3>
+  <ul>
+      <% @doctors.each do |doctor| %>
+        <li><a href="/doctors/<%= doctor.id %>"> <%= doctor.doctor_name %> </a></li>
+      <% end %>
+  </ul>
+  <% else %>
+    <p>
+      No doctors available. LEAVE NOW.
+    </p>
+  <% end %>

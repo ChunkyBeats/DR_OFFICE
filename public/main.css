@@ -1,0 +1,27 @@
+body {
+  font-family: 'Lato', Arial;
+  text-align: center;
+}
+
+.form_div {
+  font-family: 'Lato', Arial;
+}
+
+.form-group {
+  font-family: 'Lato', Arial;
+}
+.navbar {
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+}
+ul li {
+  display: inline-block;
+  padding-right: 30px;
+}
+
+button {
+  margin: 15px;
+}
