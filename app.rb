@@ -50,7 +50,7 @@ get("/clear_doctors") do
 end
 
 get("/doctors/:id") do
-
+  erb(:doctor)
 end
 
 get("/patients/:id") do

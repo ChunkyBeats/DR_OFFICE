@@ -4,7 +4,7 @@
   <h3>Patients:</h3>
   <ul>
       <% @patients.each do |patient| %>
-        <li><a href="/patients/<%= patient.id %>"> <%= patient.patient_name %> </a></li>
+        <li><a href="/patient/<%= patient.id %>"> <%= patient.patient_name %> </a></li>
       <% end %>
   </ul>
   <% else %>
